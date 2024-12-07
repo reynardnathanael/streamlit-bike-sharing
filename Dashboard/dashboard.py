@@ -41,7 +41,7 @@ def create_bytemp_df(df):
     return bytemp_df
 
 # READ THE DATA (CSV)
-data_df = pd.read_csv("data.csv")
+data_df = pd.read_csv("Dashboard/data.csv")
 
 # CALL ALL THE FUNCTIONS
 amount_by_hour = create_amount_by_hour(data_df)
@@ -50,7 +50,7 @@ bytemp_df = create_bytemp_df(data_df)
 
 with st.sidebar:
     st.markdown("<h1 style='text-align: center; color: #ff5757; font-size: 36px; margin-bottom: 30px;'>Welcome, Admin</h1>", unsafe_allow_html=True)
-    st.image("logo.png")
+    st.image("Dashboard/logo.png")
 
 st.header('Bike Sharing Dashboard :sparkles:')
 
